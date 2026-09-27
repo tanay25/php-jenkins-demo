@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout'){
             steps {
-                git branch: main, url: ''
+                git branch: main, url: 'https://github.com/tanay25/php-jenkins-demo.git'
             }
         }
         stage('Build Docker'){
