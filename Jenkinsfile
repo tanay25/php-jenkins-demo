@@ -18,7 +18,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 sh '''
-                    docker rm -f php-demo || true
+                    // docker rm -f php-demo || true
                     docker run -d --name php-demo -p 8080:80 php-jenkins-demo:latest
                 '''
             }
